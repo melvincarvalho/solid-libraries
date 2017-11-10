@@ -17,6 +17,11 @@ var file = "https://melvincarvalho.solidtest.space/public/e80a1f20-c498-11e7-b98
 SolidUtils.fetch(file, {}).then(r => alert(r))
 
 
+### Read RDF
+
+SolidUtils.rdfFetch("https://retog.solidtest.space/")
+
+
 ### Delete files
 
 var file = "https://melvincarvalho.solidtest.space/public/e80a1f20-c498-11e7-b987-c54edbcc67dd.ttl"
