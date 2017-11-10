@@ -29,12 +29,24 @@
 
     SolidAuthClient.currentSession()
 
+    SolidAuthClient.currentSession().then(function (session) {
+                if (session) {
+                    var user = $rdf.sym(session.webId);
+                    SolidUtils.rdfFetch(session.webId).then(function (response) {
+                        var name = response.graph.any(user, SolidUtils.vocab.foaf('name'));
+                        alert("Logged in as: "+name);
+                    });
+                } else {
+                    alert("Not logged in");
+                }
+            })
+
 
     ### Read files
 
     var file = "https://melvincarvalho.solidtest.space/public/e80a1f20-c498-11e7-b987-c54edbcc67dd.ttl"
 
-    SolidUtils.fetch(file, {}).then(r => alert(r))
+    SolidUtils.fetch(file).then(r => alert(r))
 
 
     ### Read RDF
