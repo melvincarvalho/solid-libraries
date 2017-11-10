@@ -23,6 +23,18 @@ SolidUtils.rdfFetch("https://retog.solidtest.space/")
 
 SolidUtils.rdfFetch(uri, {}).then(r => alert(r.graph))
 
+  SolidAuthClient.currentSession().then(function (session) {
+              if (session) {
+                  var user = $rdf.sym(session.webId);
+                  SolidUtils.rdfFetch(session.webId).then(function (response) {
+                      var name = response.graph.any(user, SolidUtils.vocab.foaf('name'));
+                      alert("Logged in as: "+name);
+                  });
+              } else {
+                  alert("Not logged in");
+              }
+          })
+
 
 ### Delete files
 
