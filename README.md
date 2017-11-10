@@ -14,7 +14,7 @@ SolidAuthClient.currentSession()
 
 var file = "https://melvincarvalho.solidtest.space/public/e80a1f20-c498-11e7-b987-c54edbcc67dd.ttl"
 
-SolidUtils.fetch(file, {}).then(r => alert(r))
+SolidUtils.fetch(file).then(r => alert(r))
 
 
 ### Read RDF
