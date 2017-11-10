@@ -20,6 +20,31 @@
 
     <hr>
 
+    <pre>
+    ## Recipes
+
+    ### Authentication
+
+    SolidAuthClient.popupLogin({popupUri: ('https://melvincarvalho.github.io/solid-libraries/popup.html')})
+
+    SolidAuthClient.currentSession()
+
+    ### Read files
+
+    var file = "https://melvincarvalho.solidtest.space/public/e80a1f20-c498-11e7-b987-c54edbcc67dd.ttl"
+
+    SolidUtils.fetch(file, {}).then(r => alert(r))
+
+
+    ### Delete files
+
+    var file = "https://melvincarvalho.solidtest.space/public/e80a1f20-c498-11e7-b987-c54edbcc67dd.ttl"
+
+    SolidUtils.fetch(file, { 'method' : 'DELETE' }).then(r => alert(r))
+  </pre>
+
+    <hr>
+
     <footer>
         <div class="center-text"><a href="https://github.com/melvincarvalho/solid-libraries/" target="_blank">GitHub Page</a> | <a href="https://github.com/melvincarvalho/solid-libraries/issues" target="_blank">GitHub Issues</a></div>
     </footer>
