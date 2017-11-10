@@ -19,10 +19,15 @@ SolidUtils.fetch(file).then(r => alert(r))
 
 ### Read RDF
 
+#### Get RDF and trigger login dialog if neeeded
+
 SolidUtils.rdfFetch("https://retog.solidtest.space/")
 
 SolidUtils.rdfFetch(uri, {}).then(r => alert(r.graph))
 
+#### Read profile
+
+```
   SolidAuthClient.currentSession().then(function (session) {
               if (session) {
                   var user = $rdf.sym(session.webId);
@@ -34,7 +39,7 @@ SolidUtils.rdfFetch(uri, {}).then(r => alert(r.graph))
                   alert("Not logged in");
               }
           })
-
+```
 
 ### Delete files
 
