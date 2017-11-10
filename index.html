@@ -29,15 +29,19 @@
 
     SolidAuthClient.currentSession()
 
+
     ### Read files
 
     var file = "https://melvincarvalho.solidtest.space/public/e80a1f20-c498-11e7-b987-c54edbcc67dd.ttl"
 
     SolidUtils.fetch(file, {}).then(r => alert(r))
 
+
     ### Read RDF
 
     SolidUtils.rdfFetch("https://retog.solidtest.space/")
+
+    SolidUtils.rdfFetch(uri, {}).then(r => alert(r.graph))
 
 
     ### Delete files

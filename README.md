@@ -21,6 +21,8 @@ SolidUtils.fetch(file, {}).then(r => alert(r))
 
 SolidUtils.rdfFetch("https://retog.solidtest.space/")
 
+SolidUtils.rdfFetch(uri, {}).then(r => alert(r.graph))
+
 
 ### Delete files
 
