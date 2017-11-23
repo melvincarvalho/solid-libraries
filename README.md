@@ -41,6 +41,11 @@ SolidUtils.rdfFetch(uri, {}).then(r => alert(r.graph))
           })
 ```
 
+### Create folder
+
+SolidUtils.createLdpc('https://melvincarvalho.solidtest.space/public/', 'pastebin')
+
+
 ### Delete files
 
 var file = "https://melvincarvalho.solidtest.space/public/e80a1f20-c498-11e7-b987-c54edbcc67dd.ttl"
