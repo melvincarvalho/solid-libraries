@@ -70,6 +70,11 @@
             })
 
 
+    ### List files in a Container
+
+    SolidClient.web.get(uri).then( container => console.log(container) )
+
+
     ### Create folder
 
     SolidUtils.createLdpc('https://melvincarvalho.solidtest.space/public/', 'pastebin')
