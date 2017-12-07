@@ -14,7 +14,7 @@ SolidAuthClient.currentSession()
 
 ### Read files
 
-var file = "https://melvincarvalho.solidtest.space/public/e80a1f20-c498-11e7-b987-c54edbcc67dd.ttl"
+var file = "https://melvincarvalho.solidtest.space/public/test.ttl"
 
 SolidUtils.fetch(file).then(r => alert(r))
 
@@ -49,6 +49,9 @@ SolidUtils.rdfFetch(uri, {}).then(r => alert(r.graph))
 
 SolidClient.web.get(uri).then( container => console.log(container) )
 
+### Create file
+
+SolidAuthClient.fetch( 'https://melvincarvalho.solidtest.space/public/test.ttl', { method : "PUT", body : "<> <> <> ." } )
 
 ### Create folder
 
