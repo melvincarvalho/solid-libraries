@@ -2,7 +2,7 @@
 
 testing solid libraries
 
-| [rdflib.js](https://github.com/solid/solid-tutorial-rdflib.js) | [solid-auth-client](https://solid.github.io/solid-auth-client/) | [solid-web-client](https://github.com/solid/solid-web-client) | [solid-client](https://github.com/solid/solid-client) | [solid-ui](https://github.com/linkeddata/solid-ui) | [solid-app-set](https://github.com/linkeddata/solid-app-set) | [solid-utils](https://github.com/melvincarvalho/solid-libraries/blob/master/lib/solid-utils.js) |
+| [rdflib.js](https://github.com/solid/solid-tutorial-rdflib.js) | [solid-auth-client](https://solid.github.io/solid-auth-client/) | [solid-web-client](https://github.com/solid/solid-web-client) | [solid-client](https://github.com/solid/solid-client) | [solid-ui](https://github.com/linkeddata/solid-ui) | [solid-app-set](https://github.com/linkeddata/solid-app-set) | [solid-utils](https://github.com/retog/solid-utils#solid-utils) |
 
 ## Recipes
 
